@@ -705,19 +705,6 @@ const QUIZ_DATA = [
     "explanation": ""
   },
   {
-    "num": 50,
-    "stem": "1.",
-    "options": {
-      "A": "The API can generate detailed reports on code quality improvements made by GitHub Copilot.",
-      "B": "The API can track the acceptance rate of code suggestions accepted and used in the organization.",
-      "C": "The API can refactor your code to improve productivity.",
-      "D": "The API can provide feedback on coding style and standards compliance.",
-      "E": "The API can provide Copilot Chat specific suggestions acceptance metrics."
-    },
-    "answer": "BE",
-    "explanation": ""
-  },
-  {
     "num": 51,
     "stem": "A company is currently storing code in Bitbucket and would like to use GitHub Copilot. Which GitHub Copilot plan will be most cost effective to allow them to manage users with their Identity Provider (e.g. Okta)?",
     "options": {
@@ -2211,7 +2198,7 @@ const QUIZ_DATA = [
     "answer": "A",
     "explanation": "Option B is the right answer. It does not write all test cases automatically."
   }
-];
+].map((q, i) => ({ ...q, num: i+1 }));
 const stats = { answered:0, correct:0, wrong:0 };
 const state = {}; // qnum -> { picked:Set, submitted:bool, isCorrect:bool }
 
