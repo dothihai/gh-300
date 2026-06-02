@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GitHub Copilot - 75 Questions Quiz</title>
+<title>GitHub Copilot - 153 Questions Quiz</title>
 <style>
   :root {
     --bg:#0d1117; --panel:#161b22; --border:#30363d; --text:#e6edf3;
@@ -91,9 +91,9 @@
 </head>
 <body>
 <header>
-  <h1>GitHub Copilot · 75 Questions</h1>
+  <h1>GitHub Copilot · 153 Questions</h1>
   <div class="stats">
-    Đã làm: <b id="answered">0</b>/75 ·
+    Đã làm: <b id="answered">0</b>/153 ·
     Đúng: <b class="good" id="correct">0</b> ·
     Sai: <b class="bad" id="wrong">0</b>
   </div>
@@ -2218,7 +2218,7 @@ function buildQuestion(q){
 
   const head = document.createElement('div');
   head.className = 'qhead';
-  head.innerHTML = `<span class="qnum">Câu ${q.num}/75</span>` +
+  head.innerHTML = `<span class="qnum">Câu ${q.num}/153</span>` +
     (isMulti ? `<span class="multi">Chọn ${correctSet.size} đáp án</span>` : '');
   wrap.appendChild(head);
 
